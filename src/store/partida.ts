@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { Partida } from "../interfaces/partida.interface";
-import { Ref, computed, ref, watch } from "vue";
+import { Ref, computed, ref } from "vue";
 import { Fila } from "../interfaces/fila.interface";
 
 const generaFilaQuien = (numOfPlayers: number): Fila[] => {

@@ -1,8 +1,6 @@
 <template>
   <div
-    :class="`grid grid-cols-${
-      numOfRows + 1
-    } gap-0 place-items-center border-b-4 border-r-2 border-indigo-300`"
+    :class="`grid grid-cols-${numOfRows + 1} gap-0 place-items-center border-b-4 border-r-2 border-indigo-300`"
   >
     <div
       class="col-span-1 p-2 border-r-2 border-indigo-300 w-full grid place-items-start text-wrap text-xs/3 sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-xl"

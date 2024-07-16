@@ -103,7 +103,7 @@ const generateFilaDonde = (numOfPlayers: number): Fila[] => {
 };
 
 const partida = defineStore("partidaStore", () => {
-  const numOfPlayers = ref(6); // TODO: get this from the user
+  const numOfPlayers = ref(6);
   const partida: Ref<Partida> = ref({
     quien: [],
     arma: [],
@@ -113,9 +113,7 @@ const partida = defineStore("partidaStore", () => {
   const iniciaPartida = (): void => {
     const lsPartida = localStorage.getItem("partida");
     if (lsPartida) {
-      if (lsPartida) {
-        partida.value = JSON.parse(lsPartida);
-      }
+      partida.value = JSON.parse(lsPartida);
     } else {
       partida.value = {
         quien: generaFilaQuien(numOfPlayers.value),
@@ -174,7 +172,6 @@ const partida = defineStore("partidaStore", () => {
         }
         break;
     }
-
     guardaPartidaEnMemoria();
   };
 
